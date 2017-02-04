@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Python Flask File Upload Application</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="static/stylesheets/style.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <hr>
+	  <div class="header">
+        <h3 class="text-muted"><center>Upload a plain File</center></h3>
+      </div>
+	  <hr>
+      
+	  <div>      
+      <form name="upload" action="upload" method="post" enctype="multipart/form-data">
+        <center><input type="file" name="file">
+		Enter File Description : <input type="text" name="desc"><br /><br />
+        <input type="submit" value="Plain Upload"></center>
+      </form>
+      </div>
+	  
+	  
+	  <hr>
+	  
+	  <div class="header">
+        <h3 class="text-muted"><center>Upload an Encrypted File</center></h3>
+      </div>
+	  <hr>
+      
+	  <div>      
+      <form name="eupload" action="eupload" method="post" enctype="multipart/form-data">
+        <center><input type="file" name="efile">
+		Enter a key : <input type="text" name="key"><br /><br />
+        <input type="submit" value="Encrypt & Upload"></center>
+      </form>
+      </div>
+	  
+	  <hr>
+	  <div class="header">
+        <h3 class="text-muted"><center>Download/Delete Files</center></h3>
+      </div>
+	  <hr>
+	  
+	  <div>
+			<center><a href='list'>List of files</a></center>
+      </div>
+    </div>
+  </body>
+
+</html>
